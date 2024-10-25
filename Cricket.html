@@ -1,4 +1,4 @@
-git <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Cricket Game</title>
@@ -12,7 +12,7 @@ git <!DOCTYPE html>
     <h1>Bat Ball Stump Game 🏏</h1>
 
     <button
-      onclick="console.log('You have chosen bat');
+      onclick="console.log('You have chosen Bat.');
     // This will generate random numbers between 0 and 3.
     let randomNumber = Math.random() * 3;
     let computerChoice;
@@ -26,26 +26,94 @@ git <!DOCTYPE html>
          computerChoice = 'Stump';
         // console.log('computer Choice is Stump');
     }
-        console.log(`computer Choice is ${computerChoice}`);
+      //console.log(`computer Choice is ${computerChoice}`);
 
 
         let resultMsg;
-    if (computerChoice === 'Ball') {
-        console.log('User won.');
-    } else if (computerChoice === 'Bat') {
-        console.log(`It's a tie`);
-    } else if (computerChoice === 'Stump') {
-        console.log('computer has won');
+    if (computerChoice == 'Ball') {
+        resultMsg = 'User won.';
+    } else if (computerChoice == 'Bat') {
+        resultMsg = `It's a tie`;
+    } else if (computerChoice == 'Stump') {
+        resultMsg = 'computer has won';
     }
 
+    alert(`You have chosen Bat. computer Choice is ${computerChoice} and ${resultMsg}`);
+
+      ">Bat 🏏</button>
+
+
+
     
+    <button 
+    onclick="console.log('You have chosen Ball.');
+    // This will generate random numbers between 0 and 3.
+    let andomNumber = Math.random() * 3;
+    let omputerChoice;
+    if (andomNumber > 0 && andomNumber <= 1) {
+         omputerChoice = 'Bat';
+        // console.log('computer Choice is Bat');
+    } else if (andomNumber > 1 && andomNumber <= 2) {
+      omputerChoice = 'Ball';
+       // console.log('computer Choice is Ball');
+    } else {
+         omputerChoice = 'Stump';
+    }
+        // console.log('computer Choice is Stump');
+    
+      //console.log(`computer Choice is ${computerChoice}`);
 
-     "
-    >
-      Bat 🏏
-    </button>
 
-    <button>Ball ⚾</button>
-    <button>Stump 🏏</button>
+    let resultMs;
+    if (omputerChoice === 'Ball') {
+        resultMs = `It's a tie`;
+    } else if (omputerChoice === 'Bat') {
+        resultMs = `computer has won`;
+    } else if (omputerChoice === 'Stump') { 
+        resultMs = 'User won.';
+    }
+
+    //upar maine variable mei bas spelling changes kiye h taaki mera sbhi buttons ke liye variable name same nhi rhe 
+
+    alert(`You have chosen Ball. computer Choice is ${omputerChoice} and ${resultMs}`);
+    
+      ">Ball ⚾</button>
+
+
+
+
+    <button 
+    onclick="console.log('You have chosen Stump.');
+    // This will generate random numbers between 0 and 3.
+    let ndomNumber = Math.random() * 3;
+    let mputerChoice;
+    if (ndomNumber > 0 && ndomNumber <= 1) {
+         mputerChoice = 'Bat';
+        // console.log('computer Choice is Bat');
+    } else if (ndomNumber > 1 && ndomNumber <= 2) {
+      mputerChoice = 'Ball';
+       // console.log('computer Choice is Ball');
+    } else {
+         mputerChoice = 'Stump';
+    }
+        // console.log('computer Choice is Stump');
+    
+      //console.log(`computer Choice is ${computerChoice}`);
+
+
+    let resultM;
+    if (mputerChoice === 'Ball') {
+        resultM = `computer has won`;
+    } else if (mputerChoice === 'Bat') {
+        resultM = `User won`;
+    } else if (mputerChoice === 'Stump') { 
+        resultM = `It's a tie`;
+    }
+
+
+    alert(`You have chosen Stump. computer Choice is ${mputerChoice} and ${resultM}`);
+    
+    
+     ">Stump 🏏</button>
   </body>
 </html>
